@@ -179,4 +179,7 @@ Send via LinkedIn to 1-2 colleagues/your manager who worked with you during the 
 
 ```
 Hi [Name], hope you're doing well! I'm updating my LinkedIn profile and would really value a short recommendation from you, especially since you've seen my work leading the AI/ML initiative and the team firsthand. Even a couple of honest sentences on what you saw me do well would mean a lot. Happy to write one for you too if that's useful. Thanks so much!
+
+
+Hi [Name], hope all is well. Could I please ask you for a short LinkedIn recommendation? Thank you so much for your time!
 ```
