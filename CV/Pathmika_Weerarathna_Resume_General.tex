@@ -1,0 +1,87 @@
+\documentclass[10.5pt]{article}
+\usepackage{resume-style}
+
+\begin{document}
+
+\cvname{Pathmika Weerarathna}
+\cvtitle{Associate Tech Lead --- Full-Stack Engineer (Mobile \& Web), AI/ML Exposure}
+\cvcontact{+94 723675513 \ $|$ \ pathmikaweerarathna@gmail.com \ $|$ \ Gonapola, Western Province, Sri Lanka}{\href{https://www.linkedin.com/in/pathmika-weerarathna-4600b31a1/}{LinkedIn} \ $|$ \ \href{https://github.com/PathmikaW}{GitHub}}
+
+\section*{Summary}
+Full-stack engineer and Associate Tech Lead with nearly five years of experience delivering production mobile and web applications for telecom operators, having grown through every engineering level at Omobio. Contributed to 25+ client and product engagements -- delivery, architecture, and pre-sales solutioning -- across 9+ countries in Asia, Africa, and Latin America. Core strengths in React Native mobile development (native modules, app security, monetization) and Next.js/React web platforms, backed by solid REST API and backend engineering. Alongside this, gained hands-on AI/ML exposure self-initiating and leading a telecom fraud-detection R\&D initiative spanning NLP embeddings, GenAI, and ensemble ML models. Deepening technical foundations through an MSc in Artificial Intelligence at the University of Moratuwa. Recognized as Emerging Employee of the Year (2023).
+
+\section*{Experience}
+
+\cvrole{Associate Tech Lead}{Omobio (Pvt) Ltd}{Jan 2026 -- Present}
+\begin{cvitems}
+  \item Lead, mentor, and scale a cross-functional engineering team of 10+ developers, driving solution design and delivery across mobile, web, and data-platform initiatives.
+  \item Serve as technical subject-matter expert for pre-sales engagements, producing architecture proposals and technical validation.
+  \item Lead two flagship platforms: the AI/ML R\&D team enhancing the SMS Firewall product with ML-driven detection, and the SOR (Steering of Roaming) centralized reporting platform.
+  \item Manage client engagements end-to-end.
+\end{cvitems}
+
+\cvrole{Senior Software Engineer}{Omobio (Pvt) Ltd}{Jan 2024 -- Jan 2026}
+\begin{cvitems}
+  \item Led Agile delivery of end-to-end mobile and web applications, owning architecture design and effort estimation.
+  \item Delivered SQL/CDR reporting engineering for Banglalink's SMSC billing platform (Bangladesh), recovering \textasciitilde85,000 dropped records and fixing a 240x query-performance regression.
+  \item Architected cross-platform mobile solutions in React Native with deep native integration (Java, Kotlin, Swift), including a \textasciitilde2,700-line custom native alarm engine built from the ground up across 26 files, replacing third-party alarm libraries on Android and iOS.
+  \item Integrated RevenueCat and \texttt{react-native-iap} for end-to-end in-app subscription purchasing.
+  \item Self-initiated AI/ML capabilities in telecom security from the ground up, building a production fraud-detection module combining semantic embeddings and a local-LLM GenAI layer (see Key Projects).
+  \item Built HOPP, Hutch's Next.js 14 web self-care portal --- authoring the core auth/locale middleware, a custom Axios API layer, and end-to-end integration with the FriMi payment gateway plus five other payment methods.
+  \item Continued ownership of Hutch Selfcare (led for 2+ years across this role and the one prior): led its React Native version upgrade from 0.66.5 to 0.76.5 and delivered 3+ change requests for new feature additions.
+  \item Mentored a team of 10 junior developers, conducted code reviews, and established coding standards and GitHub Actions CI/CD pipelines to improve software reliability.
+\end{cvitems}
+
+\cvrole{Software Engineer}{Omobio (Pvt) Ltd}{Apr 2022 -- Jan 2024}
+\begin{cvitems}
+  \item Led design and development of cross-platform mobile applications (Hutch Selfcare, Vodafone Selfcare, MyDialog, RetailHub, Circadian, SFA) in React Native, managing releases across Play Store, App Store, and Huawei AppGallery.
+  \item Contributed to Dialog's enterprise web platforms (MDA, CDR-disclosure portal) using PHP Yii2 and React.
+  \item Hardened Hutch Selfcare against fraud with certificate/public-key pinning and a device-integrity gate, and led the React Native version upgrade of Vodafone Fiji's production self-care app from RN 0.59.3 to 0.70.5.
+  \item Participated in pre-sales client engagement and contributed to ISO 27001 certification-readiness documentation and a company-wide Git branching standard, later delivered as an internal training program.
+  \item Received the Emerging Employee of the Year Award (2023) for outstanding technical contribution.
+\end{cvitems}
+
+\cvrole{Software Engineer (Intern) -- Full Stack}{Omobio (Pvt) Ltd}{Oct 2021 -- Apr 2022}
+\begin{cvitems}
+  \item Supported frontend, backend, and mobile feature development for enterprise-grade projects using React.js, React Native, Python, and RESTful APIs; transitioned to a full-time Software Engineer role based on strong performance.
+\end{cvitems}
+
+\section*{Key Projects}
+\begin{cvitems}
+  \item \textbf{Native Alarm Engine (iOS \& Android), 2024--2025:} Fully custom cross-platform alarm engine replacing third-party libraries --- reboot-persistence, background/killed-app handling, and a circadian-rhythm scheduling engine driven by astronomical data.
+  \item \textbf{Hutch Selfcare (Telecom Self-Care App), 2+ years:} Owned and evolved Hutch's flagship React Native app --- security hardening, dual FCM/HMS push architecture, a RN version upgrade (0.66.5 $\rightarrow$ 0.76.5), and 3+ feature change requests.
+  \item \textbf{HOPP Web Self-Care Portal, 2024:} Next.js/TypeScript portal with custom Axios API layer and FriMi payment-gateway integration, delivered under a Hybrid Git Flow model.
+  \item \textbf{Vodafone Fiji RN Upgrade, 2022:} Led RN 0.59.3 $\rightarrow$ 0.70.5 upgrade with New Architecture scaffolding on a large, multi-year production codebase.
+  \item \textbf{Subscription \& Monetization (IAP), 2024--2025:} RevenueCat/StoreKit/Play Billing integration with a custom REST layer reconciling trial and entitlement state.
+\end{cvitems}
+
+\section*{Additional Experience \& Engagements}
+Self-initiated and led applied AI/ML work in telecom fraud detection (2025--Present): a production embedding-based detection module (SentenceTransformers), a GenAI subsystem on local LLMs (Ollama, LangChain), and an XGBoost/CatBoost ensemble classifier. Also architected FirewallBI, a large-scale telecom BI platform (2023--2025; 8 on-prem sites, 300+ Logstash pipelines, mutual-TLS Elasticsearch cluster).
+
+Also contributed to 15+ further engagements, including Dialog's CMDP, RetailHub, WinBack, and DF platforms; Robi's Bangla SMS Opt-In/Opt-Out solution scoping (2023); RoamerSteering and Steering-of-Roaming analytics platforms (2023--Present); and solution proposals for Ncell (Nepal), Grameenphone (Bangladesh), and Ethio Telecom (Ethiopia).
+
+\section*{Areas of Expertise}
+\begin{cvitems}
+  \item \cvskill{Mobile}{React Native (incl. New Architecture), Android (Java/Kotlin), iOS (Swift/Objective-C), Huawei HMS, native module bridging}
+  \item \cvskill{Web}{React.js, Next.js, TypeScript/JavaScript, Redux/Redux-Saga}
+  \item \cvskill{Backend \& APIs}{Python, FastAPI, REST API design, Microservices, Java (Spring Boot), .NET (ASP.NET Core)}
+  \item \cvskill{AI/ML (exposure)}{PyTorch, Hugging Face Transformers, LangChain, XGBoost, CatBoost, SHAP, NLP, Semantic Search}
+  \item \cvskill{Data Engineering}{PostgreSQL, ClickHouse, MariaDB/MySQL, Elasticsearch/ELK, Apache Airflow, Celery}
+  \item \cvskill{DevOps}{Docker, Git, CI/CD (GitHub Actions, GitLab CI, Jenkins), Linux, Prometheus, Grafana}
+  \item \cvskill{Leadership}{Agile delivery, technical mentoring, pre-sales \& client engagement, architecture ownership}
+\end{cvitems}
+
+\section*{Education}
+\cvsubrole{\textbf{Master of Science in Artificial Intelligence} (Reading) -- University of Moratuwa}{July 2025 -- Present (Expected 2027)}
+\cvsubrole{\textbf{B.Sc. in Information Systems}, Second Class Upper Division, GPA 3.44 -- University of Colombo School of Computing}{2019 -- 2022}
+\cvsubrole{\textbf{Diploma in English} (Certificate Level), Distinction Pass -- Seagis Campus, Nugegoda}{2018}
+
+\section*{Achievements}
+\begin{cvitems}
+  \item Emerging Employee of the Year -- Omobio (2023): recognized for exceptional job performance and contribution to key software engineering projects.
+  \item Director's List Awardee -- University of Colombo (2021): achieved GPA above 3.7 in first academic year.
+\end{cvitems}
+
+\cvnote{References available upon request.}
+
+\end{document}

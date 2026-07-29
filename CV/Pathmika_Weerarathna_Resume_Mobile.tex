@@ -1,0 +1,85 @@
+\documentclass[10.5pt]{article}
+\usepackage{resume-style}
+
+\begin{document}
+
+\cvname{Pathmika Weerarathna}
+\cvtitle{Associate Tech Lead --- Mobile Engineer (React Native, iOS \& Android)}
+\cvcontact{+94 723675513 \ $|$ \ pathmikaweerarathna@gmail.com \ $|$ \ Gonapola, Western Province, Sri Lanka}{\href{https://www.linkedin.com/in/pathmika-weerarathna-4600b31a1/}{LinkedIn} \ $|$ \ \href{https://github.com/PathmikaW}{GitHub}}
+
+\section*{Summary}
+Mobile-focused engineering leader with nearly five years of experience shipping production React Native applications for telecom operators, having grown through every engineering level at Omobio into Associate Tech Lead. Contributed to 25+ client and product engagements -- delivery, architecture, and pre-sales solutioning -- across 9+ countries in Asia, Africa, and Latin America. Deep hands-on expertise in native module development (Java/Kotlin, Swift/Objective-C), app security hardening, push-notification architecture, and in-app monetization, alongside a track record of mentoring development teams and owning delivery from architecture through store release. Deepening technical foundations through an MSc in Artificial Intelligence at the University of Moratuwa. Recognized as Emerging Employee of the Year (2023).
+
+\section*{Experience}
+
+\cvrole{Associate Tech Lead}{Omobio (Pvt) Ltd}{Jan 2026 -- Present}
+\begin{cvitems}
+  \item Lead, mentor, and scale a cross-functional engineering team of 10+ developers across mobile and platform initiatives, owning architecture decisions and delivery quality.
+  \item Serve as technical subject-matter expert for pre-sales engagements, producing architecture proposals and technical validation.
+  \item Drive solution design and delivery across multiple product initiatives, debugging, testing, and refining software through CI/CD-driven workflows to ensure high code quality and reliability.
+  \item Manage client engagements end-to-end.
+\end{cvitems}
+
+\cvrole{Senior Software Engineer}{Omobio (Pvt) Ltd}{Jan 2024 -- Jan 2026}
+\begin{cvitems}
+  \item Architected cross-platform mobile solutions in React Native with deep native integration (Java, Kotlin, Swift), including a fully custom native alarm engine built from the ground up for a wellness app --- \textasciitilde2,700 lines of native Java/Swift/Objective-C across 26 files, bridged to a unified JavaScript API, replacing third-party alarm libraries entirely.
+  \item Engineered Android alarm reliability using \texttt{AlarmManager.setExactAndAllowWhileIdle} and foreground services, guaranteeing exact-time delivery despite Doze mode and OEM battery restrictions.
+  \item Built the iOS alarm counterpart on \texttt{UNUserNotificationCenter} with custom gradual-volume-ramp audio playback.
+  \item Integrated RevenueCat and \texttt{react-native-iap} for in-app subscription purchasing across iOS StoreKit and Google Play Billing, including a regional pricing engine and promotional/win-back retention flows.
+  \item Continued ownership of Hutch Selfcare (led for 2+ years across this role and the one prior): led its RN version upgrade from 0.66.5 to 0.76.5 and delivered 3+ change requests for new feature additions.
+  \item Mentored a team of 10 junior developers, conducted code reviews, and established coding standards and GitHub Actions CI/CD pipelines to improve software reliability.
+\end{cvitems}
+
+\cvrole{Software Engineer}{Omobio (Pvt) Ltd}{Apr 2022 -- Jan 2024}
+\begin{cvitems}
+  \item Led design and development of cross-platform mobile applications (Hutch Selfcare, Vodafone Selfcare, MyDialog, RetailHub, Dtel, Circadian, SFA) in React Native, managing releases across Play Store, App Store, and Huawei AppGallery.
+  \item Hardened Hutch Selfcare, a banking-adjacent telecom app, against fraud with certificate/public-key pinning (dual SHA-256 pins on every network request) and a device-integrity gate (jail-monkey) detecting root/jailbreak, USB debugging, and instrumentation-hook tampering.
+  \item Architected a dual push-notification pipeline dynamically selecting between Firebase Cloud Messaging and Huawei HMS Push Kit at runtime, solving Android push delivery across Sri Lanka's fragmented GMS/HMS device landscape; built a custom iOS Notification Service Extension for rich media push.
+  \item Led the React Native version upgrade of Vodafone Fiji's production self-care app from RN 0.59.3 to 0.70.5, scaffolding New Architecture plumbing (TurboModules, JSI) alongside the existing Java bridge, and resolved a JCenter-shutdown Android build breakage.
+  \item Built the foundational security architecture for Dtel (Dialog's home-telecom app): SSL/certificate pinning, a custom per-request API integrity-signing scheme with remote kill-switch, and encrypted selective Redux persistence.
+  \item Contributed to ISO 27001 certification-readiness documentation and a company-wide Git branching standard.
+  \item Received the Emerging Employee of the Year Award (2023) for outstanding technical contribution.
+\end{cvitems}
+
+\cvrole{Software Engineer (Intern) -- Full Stack}{Omobio (Pvt) Ltd}{Oct 2021 -- Apr 2022}
+\begin{cvitems}
+  \item Supported development of mobile and backend features for enterprise-grade projects using React Native, React.js, Python, and RESTful APIs; transitioned to a full-time Software Engineer role based on strong performance.
+\end{cvitems}
+
+\section*{Key Projects}
+\begin{cvitems}
+  \item \textbf{Native Alarm Engine (iOS \& Android), 2024--2025:} Fully custom cross-platform alarm engine replacing third-party libraries --- reboot-persistence, overlapping-alarm conflict resolution, and a circadian-rhythm scheduling engine converting sunrise/sunset astronomical data into dynamically computed wake/sleep/meal alarms.
+  \item \textbf{Hutch Selfcare (Telecom Self-Care App), 2+ years:} Owned and evolved Hutch's flagship React Native app --- certificate pinning, device-integrity/anti-tampering gate, a dual FCM/HMS push pipeline, a RN version upgrade (0.66.5 $\rightarrow$ 0.76.5), and 3+ feature change requests.
+  \item \textbf{Vodafone Fiji RN Upgrade, 2022:} Led RN 0.59.3 $\rightarrow$ 0.70.5 upgrade with New Architecture scaffolding on a large, multi-year production codebase, including release engineering and field QA.
+  \item \textbf{Subscription \& Monetization (IAP), 2024--2025:} RevenueCat/StoreKit/Play Billing integration with a custom REST layer reconciling trial and entitlement state independently of store-reported status.
+\end{cvitems}
+
+\section*{Additional Experience \& Engagements}
+Beyond mobile, delivered secure web platforms (Next.js/React) including HOPP's payment-integrated self-care portal (2024), and gained hands-on AI/ML exposure self-initiating a telecom fraud-detection R\&D initiative (2025--Present). Also contributed to FirewallBI, a large-scale telecom BI platform deployed across 8 on-prem operator sites (2023--2025).
+
+Also contributed to 15+ further engagements, including Dialog's MDA, CMDP, RetailHub, WinBack, and DF platforms (Sri Lanka); Robi's Bangla SMS Opt-In/Opt-Out solution scoping (2023); RoamerSteering and Steering-of-Roaming analytics platforms (2023--Present); and solution proposals for Ncell (Nepal), Grameenphone (Bangladesh), and Ethio Telecom (Ethiopia).
+
+\section*{Areas of Expertise}
+\begin{cvitems}
+  \item \cvskill{Mobile}{React Native (incl. New Architecture/TurboModules), Android (Java/Kotlin), iOS (Swift/Objective-C), Huawei HMS, native module bridging, push notifications (FCM/HMS)}
+  \item \cvskill{App Security}{SSL/certificate pinning, device-integrity/anti-tampering detection, encrypted storage, API integrity signing}
+  \item \cvskill{Monetization}{RevenueCat, \texttt{react-native-iap}, StoreKit, Google Play Billing}
+  \item \cvskill{Web \& Backend}{React.js, Next.js, TypeScript, Python, REST API design, Java (Spring Boot), .NET (ASP.NET Core)}
+  \item \cvskill{DevOps}{Docker, Git, CI/CD (GitHub Actions, Jenkins), release engineering, Play Store/App Store/AppGallery deployment}
+  \item \cvskill{Leadership}{Agile delivery, technical mentoring, pre-sales \& client engagement}
+\end{cvitems}
+
+\section*{Education}
+\cvsubrole{\textbf{Master of Science in Artificial Intelligence} (Reading) -- University of Moratuwa}{July 2025 -- Present (Expected 2027)}
+\cvsubrole{\textbf{B.Sc. in Information Systems}, Second Class Upper Division, GPA 3.44 -- University of Colombo School of Computing}{2019 -- 2022}
+\cvsubrole{\textbf{Diploma in English} (Certificate Level), Distinction Pass -- Seagis Campus, Nugegoda}{2018}
+
+\section*{Achievements}
+\begin{cvitems}
+  \item Emerging Employee of the Year -- Omobio (2023): recognized for exceptional job performance and contribution to key software engineering projects.
+  \item Director's List Awardee -- University of Colombo (2021): achieved GPA above 3.7 in first academic year.
+\end{cvitems}
+
+\cvnote{References available upon request.}
+
+\end{document}
