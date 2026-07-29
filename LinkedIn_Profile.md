@@ -81,19 +81,13 @@ Outside of work, I bring the same energy and enthusiasm I have for sports into e
 **Jan 2024 – Jan 2026**
 
 ```
-• Led Agile delivery of end-to-end mobile and web applications, owning architecture design, effort estimation, and SOW reviews for on-time, client-aligned outcomes.
-• Delivered SQL/CDR reporting engineering for a telecom operator's billing platform (Bangladesh): reverse-engineered field mappings, recovered ~85,000 dropped records, and fixed a 240x query-performance regression (4+ min → ~20 sec) via targeted database indexing.
-• Architected cross-platform mobile solutions in React Native with deep native integration (Java, Kotlin, Swift), including a ~2,700-line custom native alarm engine built from the ground up across 26 files, replacing third-party alarm libraries on Android and iOS.
-• Integrated in-app subscription and monetization systems (RevenueCat) for end-to-end purchasing across iOS StoreKit and Google Play Billing.
-• Self-initiated AI/ML capabilities in telecom security from the ground up: built a production fraud-detection module combining semantic embeddings and a local-LLM GenAI subsystem to auto-block fraudulent and grey-route traffic.
-• Built an ensemble ML classifier (XGBoost/CatBoost) with SHAP explainability and Optuna hyperparameter tuning for fraud/anomaly detection; authored a TPS-based production hardware-sizing model.
-• Contributed AI/ML risk-scoring components (Random Forest, social-graph-based fraud-ring detection) to an R&D voice-fraud-detection system built on telecom signaling protocols.
-• Built a working churn/CLV-prediction prototype (scikit-learn, Flask API, React dashboard) supporting a predictive-analytics platform proposal for a telecom operator.
-• Built a telecom operator's Next.js web self-care portal end-to-end — core auth/locale middleware, custom API layer, and payment-gateway integration across six payment methods.
-• Continued ownership of a flagship mobile self-care application (led for 2+ years across this role and the one prior): led its React Native version upgrade and delivered 3+ feature change requests.
-• Hardened a flagship mobile self-care application against fraud with certificate/public-key pinning and a device-integrity gate (root/jailbreak detection), and built a dual push-notification pipeline for Android.
+• Led Agile delivery of end-to-end mobile and web applications, owning architecture design, effort estimation, and SOW reviews, while mentoring a team of 10 junior developers and establishing coding standards and CI/CD pipelines.
+• Architected a cross-platform React Native mobile solution with deep native integration (Java, Kotlin, Swift): built a ~2,700-line custom native alarm engine from the ground up (26 files, replacing third-party libraries) and integrated RevenueCat for end-to-end in-app subscription purchasing across iOS StoreKit and Google Play Billing.
+• Owned a flagship telecom mobile self-care application for 2+ years (this role and the one prior): led its React Native version upgrade, delivered 3+ feature change requests, and hardened it with certificate/public-key pinning, a device-integrity gate (root/jailbreak detection), and a dual push-notification pipeline.
 • Built the foundational security architecture for a new telecom mobile application: SSL/certificate pinning, a custom per-request API integrity-signing scheme with remote kill-switch, and encrypted selective state persistence.
-• Mentored a team of 10 junior developers, conducted code reviews, and established coding standards and CI/CD pipelines.
+• Self-initiated AI/ML capabilities in telecom security from the ground up: a production fraud-detection module (semantic embeddings + local-LLM GenAI subsystem) and an ensemble ML classifier (XGBoost/CatBoost, SHAP, Optuna) with a TPS-based hardware-sizing model, extended into R&D with voice-fraud risk-scoring (Random Forest, social-graph analysis) and a churn/CLV-prediction prototype (scikit-learn, Flask, React).
+• Delivered SQL/CDR reporting engineering for a telecom operator's billing platform (Bangladesh): reverse-engineered field mappings, recovered ~85,000 dropped records, and fixed a 240x query-performance regression (4+ min → ~20 sec) via targeted database indexing.
+• Built a telecom operator's Next.js web self-care portal end-to-end — core auth/locale middleware, custom API layer, and payment-gateway integration across six payment methods.
 ```
 
 ### Software Engineer — Omobio (Pvt) Ltd
