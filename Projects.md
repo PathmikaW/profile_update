@@ -10,14 +10,14 @@ Native Alarm System (iOS & Android)
     • Built a "circadian rhythm" scheduling engine that converts sunrise/sunset/civil-dawn/dusk astronomical data into dynamically computed wake, sleep, meal, exercise, and light-exposure alarms and push notifications (using Notifee).
     • Solved overlapping-alarm conflicts and background/killed-app alarm detection via AppState-driven polling and bidirectional native-to-JS event bridging (DeviceEventEmitter, NSNotificationCenter).
 Subscription & Monetization (iOS/Android IAP)
-    • Integrated RevenueCat (react-native-purchases) and react-native-iap to implement end-to-end in-app subscription purchasing and entitlement management across iOS StoreKit and Google Play Billing.
+    • Integrated RevenueCat to implement end-to-end in-app subscription purchasing and entitlement management across iOS StoreKit and Google Play Billing.
     • Designed a client-side regional pricing engine mapping ISO country codes to four currency/price tiers for iOS offerings, enabling geographic price parity without native store-level tier configuration.
     • Built promotional discount and win-back retention flows (percentage-based promo codes, 50%-off retention offers, complimentary trial extensions) driven by dynamically resolved RevenueCat product identifiers.
     • Architected a custom REST API integration layer to track trial windows, subscription tier, and cancellation feedback independently of store-reported entitlement state, reconciling both sources of truth client-side.
     • Implemented App Store/Play Store-compliant cancellation UX, deep-linking users to native subscription-management screens and capturing structured cancellation feedback for retention analysis.
     • Built a tiered feature-gating system controlling access to premium content across the app based on live subscription status (trial/basic/full).
 ATS keyword line (optional, for skills section)
-React Native, iOS, Android, Swift, Objective-C, Java, native modules, native bridging, AlarmManager, UNUserNotificationCenter, foreground services, BroadcastReceiver, background execution, RevenueCat, StoreKit, Google Play Billing, in-app purchases, react-native-iap, Notifee, push notifications, REST API integration
+React Native, iOS, Android, Swift, Objective-C, Java, native modules, native bridging, AlarmManager, UNUserNotificationCenter, foreground services, BroadcastReceiver, background execution, RevenueCat, StoreKit, Google Play Billing, in-app purchases, Notifee, push notifications, REST API integration
 A couple of notes on accuracy: I didn't include a bullet about the hardcoded RevenueCat API keys in App.js — that's a security smell, not a resume-worthy achievement, so I'd skip mentioning it (or better, fix it before it comes up in a technical interview). Also, no server-side receipt validation or webhook handling exists in this codebase, so I avoided claiming that.
 
 ---
