@@ -22,7 +22,7 @@ AI/ML engineer and Associate Tech Lead with nearly five years of software engine
 
 \cvrole{Senior Software Engineer}{Omobio (Pvt) Ltd}{Jan 2024 -- Jan 2026}
 \begin{cvitems}
-  \item Self-initiated and led AI/ML capabilities in telecom security from the ground up, progressing from learning to team leadership; built a production SMS fraud-detection module (live deployment, Orange/Moov C\^ote d'Ivoire) combining SentenceTransformer embeddings (\texttt{all-MiniLM-L6-v2}) and cosine-similarity matching against a 365-day rolling reference table to auto-block OTP-bypass and grey-route A2P traffic, sustaining \textasciitilde378 messages/sec.
+  \item Self-initiated and led AI/ML capabilities in telecom security from the ground up, progressing from learning to team leadership; built a production SMS fraud-detection module (live operator deployment) combining SentenceTransformer embeddings (\texttt{all-MiniLM-L6-v2}) and cosine-similarity matching against a 365-day rolling reference table to auto-block OTP-bypass and grey-route A2P traffic, sustaining \textasciitilde378 messages/sec.
   \item Extended the fraud-detection engine with a local-LLM GenAI subsystem (Ollama-hosted Llama 3 8B / Google Gemma via LangChain-Ollama) generating new unallowed-content variants for content review and translation, backed by multilingual BAAI/bge-m3 embeddings for semantic similarity search, and an NLLB-200/FastText pipeline for 176-language identification and translation.
   \item Built an ensemble ML classifier combining XGBoost and CatBoost with SHAP explainability and Optuna hyperparameter tuning for fraud/anomaly-detection use cases; authored a TPS-based production hardware-sizing model (2--1,200+ TPS scaling tables, GPU-tier flagging) and a tiered data-retention redesign cutting steady-state database growth by \textasciitilde90\%.
   \item Contributed AI/ML risk-scoring components (Random Forest classification, social-graph-based SIM-box-ring detection via community/centrality analysis) to an R\&D flash-call fraud-detection system built on CAMEL/CAP signaling.
@@ -44,7 +44,8 @@ AI/ML engineer and Associate Tech Lead with nearly five years of software engine
 
 \section*{Key Projects}
 \begin{cvitems}
-  \item \textbf{SMS Firewall AI/ML Suite, 2025--Present:} Modular FastAPI-based detection suite for OTP-bypass, phishing/Unicode analysis, and grey-route identification, processing high-volume SMS data streams; combines semantic embeddings, a local-LLM GenAI layer, and an XGBoost/CatBoost ensemble with SHAP/Optuna.
+  \item \textbf{SMS Firewall AI/ML Suite:} Modular FastAPI-based detection suite for OTP-bypass, phishing/Unicode analysis, and grey-route identification, processing high-volume SMS data streams; combines semantic embeddings, a local-LLM GenAI layer, and an XGBoost/CatBoost ensemble with SHAP/Optuna.
+  \item \textbf{SOR --- Centralized Reporting Platform:} Lead a centralized telecom data-reporting platform spanning backend pipelines and web dashboards, with asynchronous task processing and containerized deployment.
   \item \textbf{Flash Call / Voice Firewall ML Layer, 2025:} Random Forest risk scoring and social-graph-based SIM-box-ring detection layered on a CAMEL/CAP signaling fraud-detection system; scoped a next-phase Voice Firewall suite (IRSF, Wangiri, SIM-swap).
   \item \textbf{Predictive CLV \& Campaign Insights, 2025:} Designed a 16-module ML platform architecture (predictive CLV, churn risk, offer recommendation, uplift modeling, behavioral clustering) and built a working Random Forest churn-prediction prototype with a Flask API and React GUI.
 \end{cvitems}
