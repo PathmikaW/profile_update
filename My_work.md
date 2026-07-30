@@ -78,6 +78,20 @@ Evidence: `Project Documents/AIML/A2P/*`, `Project Documents/rule bypass detecti
 
 ---
 
+## 2a. SMS Firewall AI/ML Suite — Current/Expanded Architecture [Project Work, per direct input — supersedes Section 2 above]
+
+*(Section 2 above captures an earlier snapshot of just the OTP-bypass/grey-route module. The suite has since grown into a modular platform with several detection modules behind a single codebase and admin CMS. Recorded here per direct input, not yet cross-checked against a new evidence pull — re-verify against `Project Documents/AIML/smsfw/*` when that folder is next refreshed.)*
+
+- **Platform**: Architected and led end-to-end development of a modular SMS Firewall AI/ML Suite exposing REST APIs (FastAPI), enabling dynamic deployment of containerized detection modules — OTP-bypass, encoded-Unicode-pattern detection, phishing-URL detection, grey-route identification, and campaign detection — all integrated into a single codebase and controlled via a unified admin CMS (Next.js), processing high-volume SMS data streams.
+- **OTP-bypass / grey-route module**: as documented in Section 2 (Caesar-cipher/base64 decryption, SentenceTransformer `all-MiniLM-L6-v2` embeddings, cosine-similarity vs. rolling reference table, ~378 msg/sec). **Correction**: the semantic-embeddings approach isn't unique to this module — the encoded-Unicode-pattern detection module also layers in semantic embeddings; earlier drafts had scoped this to the OTP-bypass/grey-route module alone.
+- **Phishing-URL detection module**: ensemble ML classifier (XGBoost + CatBoost) with SHAP explainability and Optuna hyperparameter tuning. **Correction**: Section 2 (and downstream CV/cover-letter drafts) had mis-attributed this XGBoost/CatBoost ensemble to the grey-route/OTP-bypass module — it belongs to the phishing-URL module.
+- **GenAI subsystem**: local LLM (Google Gemma via Ollama, orchestrated with LangChain-Ollama) for content review and translation, backed by multilingual BAAI/bge-m3 embeddings (SentenceTransformers) for semantic similarity search.
+- **Multilingual NLP pipeline**: FastText for 176-language identification with LLM-based translation — supersedes the earlier NLLB-200/20-language approach noted in Section 2.
+- **Data layer**: MariaDB via SQLAlchemy ORM, containerized with Docker.
+- Encoded-Unicode-pattern and campaign-detection modules are named per direct input; module-level implementation detail not yet documented here — fold in once evidence is pulled.
+
+---
+
 ## 3. AI/ML SMS Firewall Suite (product/roadmap decks) [Pre-Sales]
 
 - Client-facing pptx decks (Omobio-branded + co-branded Panamax version) pitching A2P grey-route detection, semantic content filtering, and real-time campaign detection as an add-on to the rule-based firewall.
