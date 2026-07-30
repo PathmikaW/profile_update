@@ -37,7 +37,6 @@ Legend: **[Project Work]** = hands-on delivery/engineering, **[Pre-Sales]** = pr
 | 27 | Git Training Program | Internal (Omobio-wide) | Internal Process/Leadership | undated |
 | 28 | Internal AI Challenge 2025 (hackathon) | Internal (Omobio-wide) | Internal Process/Leadership | Nov 2025 |
 | 29 | AI Feature Proposals (Chatbot/Health Tip/OCR Nutrition/Voice Bot) | Client-facing AI EE docs | Pre-Sales | undated |
-| 30 | Telecom AI/ML Training & Mentorship Curriculum | Internal (Omobio-wide) | Internal Process/Leadership | undated |
 | 31 | AIML Learnings / Omobio AI SDLC Guardian proposal | Internal | Internal Process/Leadership + R&D | undated |
 | 32 | BSNL Selfcare AIML | BSNL (India) | Pre-Sales | undated |
 | 33 | Bankai Digital Wallet AI (eKYC/Credit Scoring) | Bankai / MobiFin | Pre-Sales | undated |
@@ -395,16 +394,6 @@ Evidence: `PathmikaSharepoint/Pathmika/AI Challenge/*`.
 - **Voice Chatbot + Virtual Human Interface**: 720-day voice bot (ASR/TTS/SIP/IVR, PCI-DSS/GDPR) + 480-day 3D avatar/lip-sync layer = 1,200-day combined program.
 
 Evidence: `PathmikaSharepoint/Pathmika/AIA- EE and Effort Justification/*`.
-
----
-
-## 30. Telecom AI/ML Training & Mentorship Curriculum [Internal Process/Leadership]
-
-- Authored a 12-lesson curriculum (4 stages: Python/SQL/stats fundamentals → ML algorithms for telco → hands-on labs on public datasets (Kaggle Telco Churn, IEEE-CIS Fraud, CAIDA) → deployment via Flask/FastAPI/Dialogflow).
-- Companion "Algorithms" reference mapping specific ML algorithms to 7 telecom use-case categories with named datasets/tooling.
-- At least one lesson delivered ("Python for Data Science (Telco AI/ML)") — evidence of execution, not just planning.
-
-Evidence: `PathmikaSharepoint/Pathmika/Learning Plan/*`, `Pathmika/Learnings/*`.
 
 ---
 
