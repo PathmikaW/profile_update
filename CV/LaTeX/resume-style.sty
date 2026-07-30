@@ -7,6 +7,7 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[english]{babel}
 \RequirePackage[margin=0.5in]{geometry}
 \RequirePackage{enumitem}
 \RequirePackage{xcolor}
@@ -36,6 +37,11 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \RaggedRight
+\sloppy
+\tolerance=9999
+\emergencystretch=3em
+\hyphenpenalty=300
+\exhyphenpenalty=300
 \color{ink}
 
 \hypersetup{
@@ -66,7 +72,7 @@
   {\large\bfseries\color{accent}}
   {}{0em}{}
   [\vspace{-7pt}{\color{accentrule}\rule{\linewidth}{0.8pt}}]
-\titlespacing{\section}{0pt}{6pt}{4pt}
+\titlespacing{\section}{0pt}{5pt}{3pt}
 
 % ---- Role / entry heading: title on left, dates on right, same line ----
 \newcommand{\cvrole}[3]{%
@@ -89,8 +95,8 @@
 \newlist{cvitems}{itemize}{1}
 \setlist[cvitems]{
   leftmargin=14pt,
-  itemsep=1pt,
-  topsep=2pt,
+  itemsep=0pt,
+  topsep=1pt,
   parsep=0pt,
   label={\color{accent}\textbullet}
 }
