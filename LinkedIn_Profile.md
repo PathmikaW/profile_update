@@ -104,7 +104,7 @@ Generalized so nothing proprietary is named — useful if you want to write a sh
 **AI/ML:** PyTorch · Hugging Face Transformers · LangChain · Ollama · XGBoost · CatBoost · scikit-learn · SHAP · Optuna · NLP · Semantic Search · Random Forest
 **Data Engineering:** PostgreSQL · ClickHouse · MariaDB/MySQL · Elasticsearch/ELK · Apache Airflow · Celery
 **Security:** SSL/Certificate Pinning · OAuth2 · Device-Integrity Checks
-**DevOps:** Docker · Git · CI/CD · GitHub Actions · GitLab CI · Jenkins · Linux · Prometheus · Grafana
+**DevOps:** Microsoft Azure · Docker · Git · CI/CD · GitHub Actions · GitLab CI · Jenkins · Linux · Prometheus · Grafana
 **Leadership:** Agile Delivery · Technical Mentoring · Pre-Sales & Client Engagement · Architecture Ownership
 
 ---
@@ -119,6 +119,14 @@ July 2025 – Present (Expected 2027)
 
 **Diploma in English** (Certificate Level), Distinction Pass — Seagis Campus, Nugegoda
 2018
+
+---
+
+## Licenses & Certifications
+
+**Microsoft Certified: Azure Fundamentals** — Microsoft
+Issued Aug 2026 · Credential ID 7DD23730B12BBE07
+[Show credential](https://learn.microsoft.com/en-us/users/pathmikaweerarathna-2693/credentials/7dd23730b12bbe07)
 
 ---
 
