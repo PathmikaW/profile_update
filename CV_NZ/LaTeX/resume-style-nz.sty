@@ -1,0 +1,126 @@
+% ATS-friendly resume style -- New Zealand variant
+% Based on ../../CV/LaTeX/resume-style.sty, with:
+%   - a touch more breathing room (NZ CVs commonly run 2-3 pages, not squeezed to 1)
+%   - a \cvvisa banner macro for a prominent work-rights/relocation callout
+% Single column, no tables/graphics/icons/text-boxes, real selectable text only.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{resume-style-nz}[2026/09/16 ATS-friendly NZ resume style v1]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[english]{babel}
+\RequirePackage[margin=0.6in]{geometry}
+\RequirePackage{enumitem}
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{titlesec}
+\RequirePackage{tabularx}
+\RequirePackage{ragged2e}
+
+% TeX Gyre Heros: free (GUST Font License, OFL-compatible), a high-quality
+% Helvetica-equivalent shipped as native Type1/OpenType via the classic
+% pdfTeX font path (not fontspec/XeTeX), which keeps the PDF's text-extraction
+% (ToUnicode) mapping correct for digits/numbers -- critical for ATS parsing.
+\RequirePackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+% TeX Gyre Cursor: the matching monospace face from the same free type
+% family, used for \texttt{} (API/library names) so code text doesn't clash
+% with a mismatched default typewriter font.
+\RequirePackage{tgcursor}
+\renewcommand{\ttdefault}{qcr}
+
+% ---- Professional, friendly color palette ----
+\definecolor{accent}{RGB}{27,71,110}      % corporate navy-blue -- name, section headers, links
+\definecolor{accentrule}{RGB}{158,181,201} % soft tint of accent for underlines
+\definecolor{accentbg}{RGB}{230,238,245}   % pale tint of accent -- visa/work-rights banner fill
+\definecolor{ink}{RGB}{40,40,40}          % body text, near-black for print/ATS clarity
+\definecolor{subtext}{RGB}{100,100,100}   % company names, dates, secondary info
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\RaggedRight
+\sloppy
+\tolerance=9999
+\emergencystretch=3em
+\hyphenpenalty=300
+\exhyphenpenalty=300
+\color{ink}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+}
+
+% ---- Header ----
+\newcommand{\cvname}[1]{%
+  {\fontsize{24}{26}\selectfont\bfseries\color{accent} #1}\par\vspace{1pt}
+}
+\newcommand{\cvtitle}[1]{%
+  {\fontsize{12}{14}\selectfont\bfseries\color{accent} #1}\par\vspace{3pt}
+}
+% Two explicit lines -- avoids unpredictable mid-item line wraps.
+\newcommand{\cvcontact}[2]{%
+  {\small\color{ink} #1}\par\vspace{1.5pt}
+  {\small\color{ink} #2}\par\vspace{4pt}
+}
+
+% ---- Visa / work-rights banner -- shaded callout directly under contact
+% info, ahead of the header rule. NZ employers screen overseas applicants
+% on this line first, so it needs to be unmissable, not buried in Summary.
+\newcommand{\cvvisa}[1]{%
+  \noindent\colorbox{accentbg}{%
+    \parbox[c]{\dimexpr\linewidth-2\fboxsep}{\small\bfseries\color{accent} #1}%
+  }\par\vspace{5pt}%
+  {\color{accent}\rule{\linewidth}{0.9pt}}\vspace{2pt}
+}
+
+% ---- Section headings ----
+% Plain bold (no small-caps faking) so headers use the exact same font
+% weight/shape as the name and headline -- avoids TeX Gyre Heros's
+% synthesized small-caps looking visually inconsistent with real bold text.
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}
+  [\vspace{-7pt}{\color{accentrule}\rule{\linewidth}{0.8pt}}]
+\titlespacing{\section}{0pt}{4pt}{3pt}
+
+% ---- Role / entry heading: title on left, dates on right, same line ----
+\newcommand{\cvrole}[3]{%
+  \vspace{3pt}
+  \noindent\begin{tabularx}{\linewidth}{@{}X@{\hspace{8pt}}r@{}}
+    \textbf{\color{ink}#1} & \textbf{\small\color{subtext}#3} \\
+  \end{tabularx}%
+  \ifx&#2&\else\par{\small\itshape\color{subtext}#2}\fi
+  \vspace{2pt}
+}
+
+% ---- Sub-entry (e.g. degree, or an achievement line): text left, date/tag
+% right-aligned via \hfill. Date is wrapped in \mbox so it can never itself
+% break mid-word if the line wraps (the classic "2019 --\n2022" bug).
+\newcommand{\cvsubrole}[2]{%
+  \color{ink}#1 \hfill \mbox{\small\color{subtext}#2}\par\vspace{3pt}%
+}
+
+% ---- Bullet list ----
+\newlist{cvitems}{itemize}{1}
+\setlist[cvitems]{
+  leftmargin=14pt,
+  itemsep=1pt,
+  topsep=2pt,
+  parsep=0pt,
+  label={\color{accent}\textbullet}
+}
+
+% ---- Skill/category line: "Category: item, item, item" ----
+\newcommand{\cvskill}[2]{%
+  \noindent\textbf{\color{ink}#1: }\color{ink}#2\par\vspace{2pt}
+}
+
+% ---- Closing note (e.g. referees line) ----
+\newcommand{\cvnote}[1]{%
+  \vspace{1pt}\par{\small\itshape\color{subtext}#1}
+}
+
+\endinput
