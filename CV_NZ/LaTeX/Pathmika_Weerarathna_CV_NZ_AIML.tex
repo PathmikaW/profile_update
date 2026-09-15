@@ -1,0 +1,84 @@
+\documentclass[10.5pt]{article}
+\usepackage{resume-style-nz}
+
+\begin{document}
+
+\cvname{Pathmika Weerarathna}
+\cvtitle{Associate Tech Lead \ $|$ \ AI/ML Engineer}
+\cvcontact{+94 723675513 \ $|$ \ pathmikaweerarathna@gmail.com \ $|$ \ Sri Lanka (relocating to Auckland, NZ)}{\href{https://www.linkedin.com/in/pathmika-weerarathna-4600b31a1/}{LinkedIn} \ $|$ \ \href{https://github.com/PathmikaW}{GitHub}}
+\cvvisa{Relocating to Auckland, New Zealand in March 2027 -- full, unrestricted open work rights via Partner Visa (no employer sponsorship required). Available for remote work in the interim.}
+
+\section*{Summary}
+AI/ML engineer and Associate Tech Lead with five years of software engineering experience, having self-initiated and led applied AI/ML capabilities in telecom fraud detection from the ground up at Omobio, progressing from individual learning to leading an AI/ML R\&D team. Contributed to 20+ client and product engagements across delivery, architecture, and pre-sales in South Asia, Africa, and the Middle East. Hands-on experience building NLP/embedding-based detection, a GenAI subsystem on local LLMs, and ensemble ML classifiers, backed by strong software engineering fundamentals across full-stack and backend development. Currently pursuing an MSc in Artificial Intelligence at the University of Moratuwa. Recognised as Emerging Employee of the Year (2023).
+
+\section*{Experience}
+
+\cvrole{Associate Tech Lead}{Omobio (Pvt) Ltd}{Jan 2026 - Sep 2026}
+\begin{cvitems}
+  \item Led the AI/ML R\&D team enhancing an existing rule-based SMS Firewall product with machine-learning-driven detection capabilities, mentoring the cross-functional engineering team of around 10.
+  \item Served as technical subject-matter expert for AI/ML pre-sales engagements, producing architecture proposals and technical validation for telecom fraud-detection and predictive-analytics platforms across Africa, South Asia, and the Middle East.
+  \item Leveraged AI tools throughout the design and development workflow to boost personal productivity, enabling faster turnaround and higher-quality output.
+  \item Also led the SOR (Steering of Roaming) centralised reporting platform, a full-stack telecom data-reporting solution spanning backend pipelines and web dashboards.
+\end{cvitems}
+
+\cvrole{Senior Software Engineer}{Omobio (Pvt) Ltd}{Jan 2024 - Jan 2026}
+\begin{cvitems}
+  \item Self-initiated and led development of a modular SMS Firewall AI/ML Suite (FastAPI, containerised modules, single admin CMS) covering OTP-bypass, phishing-URL, encoded-Unicode, grey-route, and campaign detection; built the OTP-bypass/grey-route module combining SentenceTransformer embeddings (\texttt{all-MiniLM-L6-v2}) and cosine-similarity matching against a rolling reference table.
+  \item Engineered the suite's GenAI subsystem: a local-LLM layer (Google Gemma via Ollama, orchestrated with LangChain) generating unallowed-content variants for content review and translation, backed by multilingual BAAI/bge-m3 embeddings for semantic similarity search, and a FastText/NLLB pipeline for language identification and translation.
+  \item Built the suite's phishing-URL detection module: an ensemble ML classifier combining XGBoost and CatBoost with SHAP explainability and Optuna hyperparameter tuning; authored a TPS-based hardware-sizing model with GPU-tier guidance and a tiered data-retention design that substantially reduced steady-state database growth.
+  \item Contributed AI/ML risk-scoring (Random Forest, social-graph SIM-box-ring detection) to an R\&D flash-call fraud-detection system on CAMEL/CAP signalling.
+  \item Mentored a team of 10 junior developers on ML engineering practices, code review, and CI/CD (GitHub Actions).
+\end{cvitems}
+
+\cvrole{Software Engineer}{Omobio (Pvt) Ltd}{May 2022 - Jan 2024}
+\begin{cvitems}
+  \item Led design and development of cross-platform mobile applications (Hutch Selfcare, Vodafone Selfcare, MyDialog, RetailHub, Circadian, SFA) in React Native, managing releases across Play Store, App Store, and Huawei AppGallery.
+  \item Built web applications in Next.js and React.js for enterprise and telecom clients, forming the full-stack foundation later applied to AI/ML work.
+  \item Received the Emerging Employee of the Year Award (2023) for outstanding technical contribution.
+\end{cvitems}
+
+\cvrole{Software Engineer (Intern) - Full Stack}{Omobio (Pvt) Ltd}{Oct 2021 - Apr 2022}
+\begin{cvitems}
+  \item Supported development of frontend, backend, and mobile features for enterprise-grade projects using React.js, React Native, and RESTful APIs; transitioned to a full-time Software Engineer role based on strong performance.
+\end{cvitems}
+
+\section*{Key Projects}
+\begin{cvitems}
+  \item \textbf{SMS Firewall AI/ML Suite:} Modular FastAPI-based detection suite (containerised modules, single admin CMS) for OTP-bypass, phishing-URL, encoded-Unicode, grey-route, and campaign detection, processing SMS data streams; phishing-URL detection uses an XGBoost/CatBoost ensemble (SHAP/Optuna), the OTP-bypass/grey-route and encoded-Unicode modules layer in semantic embeddings, and a local-LLM GenAI layer supports suite-wide content review and translation.
+  \item \textbf{SOR (Centralised Reporting Platform):} Led a centralised telecom data-reporting platform spanning backend pipelines and web dashboards, with asynchronous task processing and containerised deployment.
+  \item \textbf{Flash Call / Voice Firewall ML Layer, 2025:} Random Forest risk scoring and social-graph-based SIM-box-ring detection layered on a CAMEL/CAP signalling fraud-detection system; scoped a next-phase Voice Firewall suite (IRSF, Wangiri, SIM-swap).
+  \item \textbf{Predictive CLV \& Campaign Insights, 2025:} Scoped a multi-module ML platform architecture (predictive CLV, churn risk, offer recommendation, uplift modelling, behavioural clustering) and built a working Random Forest churn-prediction prototype with a Flask API and React GUI.
+\end{cvitems}
+
+\section*{Additional Experience \& Engagements}
+Beyond AI/ML, built production mobile and web applications in React Native and Next.js/React, including HOPP's payment-integrated web portal and 2+ years owning Hutch Selfcare, forming the full-stack fundamentals underpinning the ML work above. Also contributed pre-sales input to further AI/ML proposals across telecom fraud detection and predictive/customer analytics.
+
+\section*{Areas of Expertise}
+\begin{cvitems}
+  \item \cvskill{AI/ML \& Data Science}{PyTorch, Hugging Face Transformers, LangChain, Ollama, XGBoost, CatBoost, scikit-learn, SHAP, Optuna, Random Forest}
+  \item \cvskill{NLP \& GenAI}{SentenceTransformers (BAAI/bge-m3), semantic search, FastText, NLLB translation, local-LLM deployment (Llama 3, Google Gemma)}
+  \item \cvskill{Applied ML Domains}{Fraud/anomaly detection, predictive modelling (CLV/churn), social-graph analysis}
+  \item \cvskill{Backend \& APIs}{Python, FastAPI, REST API design, Java (Spring Boot), .NET (ASP.NET Core), Microservices}
+  \item \cvskill{Data Engineering}{PostgreSQL, ClickHouse, MariaDB, Elasticsearch/ELK, Apache Airflow, Apache Spark, Celery}
+  \item \cvskill{Web \& Mobile}{React.js, Next.js, TypeScript, React Native}
+  \item \cvskill{DevOps}{Microsoft Azure (AZ-900 Certified), Docker, Git, CI/CD (GitHub Actions, Jenkins), Linux}
+\end{cvitems}
+
+\section*{Education}
+\cvsubrole{\textbf{Master of Science in Artificial Intelligence} (Reading) - University of Moratuwa}{July 2025 - Present (Expected 2027)}
+\cvsubrole{\textbf{B.Sc. in Information Systems}, Second Class Upper Division, GPA 3.44 - University of Colombo School of Computing}{2019 - 2022}
+\cvnote{BSc (Colombo, 2022) is NZQA LQEA-listed (Level 7); MSc by research (Moratuwa) will qualify at Level 9 on completion (2027).}
+
+\section*{Certifications}
+\cvsubrole{\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} - \href{https://learn.microsoft.com/en-us/users/pathmikaweerarathna-2693/credentials/7dd23730b12bbe07}{Verify Credential}}{Aug 2026}
+
+\section*{Achievements}
+\begin{cvitems}
+  \item Emerging Employee of the Year - Omobio (2023): recognised for exceptional job performance and contribution to key software engineering projects.
+  \item Director's List Awardee - University of Colombo (2021): achieved GPA above 3.7 in first academic year.
+\end{cvitems}
+
+\section*{Referees}
+\cvnote{Available on request.}
+
+\end{document}
